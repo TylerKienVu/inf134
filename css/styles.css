@@ -1,0 +1,39 @@
+.nav-item {
+	text-align: right;
+}
+
+#landing-page-row {
+	height: 100vh;
+	width: 100vw;
+	background-color: #7EB2DD;
+}
+
+#landing-page-heading-container {
+	text-align: center;
+	padding-top: 50vh;
+}
+
+#landing-page-heading {
+	color: white;
+}
+
+#mission-statement-row {
+	overflow-y: auto;
+	width: 100vw;
+	background-color: white;
+}
+
+#mission-statement-container {
+	text-align: center;
+	padding-top: 10vh;
+	padding-bottom: 10vh;
+	padding-left: 5vw;
+	padding-right: 5vw;
+}
+
+#demo-row {
+	overflow-y: auto;
+	width: 100vw;
+	background: #C1CAD6;
+	text-align: center;
+}
