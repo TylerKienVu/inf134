@@ -4,6 +4,14 @@ Color Scheme:
 #6EB5C0 blue topaz
 #006C84 cerulean
 #E2E8E4 icicle
+
+Picture Scheme:
+#84A89A green sheen
+#638A91 steel teal
+#A7D2A6 granny smith apple
+#D25841 dark coral
+#E08064 pale copper
+
 */
 
 .nav-item {
@@ -21,6 +29,7 @@ Color Scheme:
 	padding-right: 10vw;
 	padding-bottom: 5vh;
 	text-align: center;
+	font-weight: 500;
 }
 
 .profile-container{
@@ -82,7 +91,7 @@ Color Scheme:
 #mission-statement-row {
 	overflow-y: auto;
 	width: 100vw;
-	background-color: #E2E8E4;
+	background-color: #D25841;
 }
 
 #mission-statement-container {
@@ -91,7 +100,7 @@ Color Scheme:
 	padding-bottom: 10vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
-	color: #006C84;
+	color: white;
 }
 
 #demo-row {
@@ -113,14 +122,13 @@ Color Scheme:
 
 #support-row {
 	background-color: #E2E8E4;
-	color: black;
+	color: #006C84;
 }
 
 #support-heading-container {
 	text-align: center;
 	padding-top: 5vh;
 	padding-bottom: 5vh;
-	color: #006C84;
 }
 
 #support-buttons {
@@ -146,8 +154,8 @@ Color Scheme:
 }
 
 #contact-row {
-	background-color: #E2E8E4;
-	color: #006C84;
+	background-color: #D25841;
+	color: white;
 }
 
 #contact-heading-container {
