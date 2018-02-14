@@ -1,26 +1,88 @@
+/*
+Color Scheme:
+#FFCCBB sunrise
+#6EB5C0 blue topaz
+#006C84 cerulean
+#E2E8E4 icicle
+*/
+
 .nav-item {
 	text-align: right;
+}
+
+.button-container {
+	display: inline-block;
+	padding: 1em;
+}
+
+.block-text {
+	text-overflow: break-word;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 5vh;
+	text-align: center;
+}
+
+.profile-container{
+	display: block;
+	height: 200px;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15vh;
+	text-align: center;
+	-webkit-transition: all 2.5s;
+}
+
+.profile-picture{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+
+.icon {
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.btn-primary {
+	background-color: #006C84 !important;
+	border-color: #006C84 !important;
+}
+
+.centered-axis-x {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 #landing-page-row {
 	height: 100vh;
 	width: 100vw;
-	background-color: #7EB2DD;
+	background: #6EB5C0;
 }
 
 #landing-page-heading-container {
-	text-align: center;
-	padding-top: 50vh;
+	top: 40vh;
+	color: white;
 }
 
 #landing-page-heading {
-	color: white;
+	z-index: 2;
+}
+
+#landing-img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 0;
 }
 
 #mission-statement-row {
 	overflow-y: auto;
 	width: 100vw;
-	background-color: white;
+	background-color: #E2E8E4;
 }
 
 #mission-statement-container {
@@ -29,11 +91,73 @@
 	padding-bottom: 10vh;
 	padding-left: 5vw;
 	padding-right: 5vw;
+	color: #006C84;
 }
 
 #demo-row {
 	overflow-y: auto;
 	width: 100vw;
-	background: #C1CAD6;
+	background: #6EB5C0;
 	text-align: center;
+	color: white;
+}
+
+#demo-heading-container {
+	padding-top: 10vh;
+	padding-bottom: 5vh;
+}
+
+#video-container {
+	padding-bottom: 5vh;
+}
+
+#support-row {
+	background-color: #E2E8E4;
+	color: black;
+}
+
+#support-heading-container {
+	text-align: center;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	color: #006C84;
+}
+
+#support-buttons {
+	text-align: center;
+	padding-bottom: 5vh;
+}
+
+#support-bio {
+	padding-bottom: 1vh;
+}
+
+#team-heading-container {
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+}
+
+#team-row {
+	background: #6EB5C0;
+	overflow-y: auto;
+	width: 100vw;
+	text-align: center;
+	color: white;
+}
+
+#contact-row {
+	background-color: #E2E8E4;
+	color: #006C84;
+}
+
+#contact-heading-container {
+	text-align: center;
+	padding-top: 10vh;
+	padding-bottom: 5vh;
+}
+
+#icons-container {
+	text-align: center;
+	font-size: 3em;
+	padding-bottom: 10vh;
 }
