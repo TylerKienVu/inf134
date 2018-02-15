@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta author="INF134">
     <title>TherapyVR</title>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 	<script src="js/scripts.js"></script>	
@@ -16,7 +18,7 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
 	  <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="navbar-toggler-icon"></span>
 	  </button>
@@ -24,40 +26,44 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+	        <a class="nav-link" href="#landing-page-row">Home<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">About</a>
+	        <a class="nav-link" href="#demo-row">Demo</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Demo</a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Support Us</a>
+	        <a class="nav-link" href="#support-row">Support Us</a>
 	      </li>	      	      
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Our Team</a>
+	        <a class="nav-link" href="#team-row">Our Team</a>
 	      </li>	      
 	    </ul>
 	  </div>
 	</nav>
 	<div id="landing-page-row">
 		<div id="landing-page-heading-container" class="centered-axis-x">
-			<h2 id="landing-page-heading">TherapyVR</h2>
+			<h2 id="landing-page-heading" class="scaling-heading no-opacity">TherapyVR</h2>
+		</div>
+		<div id="demo-button-container" class="centered-axis-x">
+			<button id="demo-button" type="button" class="btn btn-outline-primary no-opacity"><a href="#demo-row">Demo</a></button>
 		</div>
 		<img id="landing-img" src="content/background.jpg">
 	</div>
 	<div id="mission-statement-row">
 		<div id="mission-statement-container">
-			<h2 id="mission-statement">Overcome your phobias through Virtual Reality and understand the experience of victims that have different phobias in one simulation.</h2>
+			<h2 id="mission-statement" class="no-opacity">Overcome your phobias through Virtual Reality and understand the experience of victims that have different phobias in one simulation.</h2>
 		</div>
 	</div>
 	<div id="demo-row">
 		<div id="demo-heading-container">
-			<h2 id="demo-heading">TherapyVR Demo</h2>
+			<h2 id="demo-heading" class="scaling-heading">TherapyVR Demo</h2>
 		</div>
 		<div id="video-container">
-			<iframe id="video" width="300" height="250" src="https://www.youtube.com/embed/cML814JD09g" frameborder="0" allow="encrypted-media" allowfullscreen></iframe>
+			<div class="wrapper">
+				<div class="youtube" data-embed="cML814JD09g">
+					<div class="play-button"></div>
+				</div>
+			</div>
 		</div>
 		<div id="video-bio" class="block-text">
 			<p>These simulations are meant to be a form of exposure therapy to phobias in hopes that they allow the user to grow comfortable with the subject. The user will be put in a phobia simulation of thier choosing. The simulations for the specific phobia will vary in intensity as the user progresses through rounds. At the end of each round, the user will answer a small survey that will judge whether they are ready to move on to the next round of therapy.</p>
@@ -65,69 +71,69 @@
 	</div>
 	<div id="support-row">
 		<div id="support-heading-container">
-			<h2 id="support-heading">Wanna Support the Project?</h2>
+			<h2 id="support-heading" class="scaling-heading">Wanna Support the Project?</h2>
 		</div>
 		<div id="support-bio" class="block-text">
 			<p>We need your help to make this project come alive! You can support us by sharing this website and by giving a donation. Donations will help build a foundation for the development of this project.</p>
 		</div>
 		<div id="support-buttons">
 			<div class="button-container">
-				<button type="button" class="btn btn-primary">Share</button>
+				<button id="share-button" type="button" class="btn btn-primary no-opacity">Share</button>
 			</div>
 			<div class="button-container">
-				<button type="button" class="btn btn-primary">Donate</button>
+				<button id="donate-button" type="button" class="btn btn-primary no-opacity">Donate</button>
 			</div>
 		</div>
 	</div>
 	<div id="team-row">
 		<div id="team-heading-container">
-			<h2 id="team-heading">Meet the Team</h2>
+			<h2 id="team-heading" class="scaling-heading">Meet the Team</h2>
 		</div>
 		<div id="meet-the-team-container" class="container-fluid">
-			<div style="text-align: center">
+			<div style="text-align: center" class="row justify-content-center">
 				<div id="diana" class="profile-container">
 					<img class="profile-picture" src="content/diana.jpg"/>
-					<h4>Diana Sandil</h4>
-					<h6>Project Manager</h6>
+					<h4 class="profile-name">Diana Sandil</h4>
+					<h6 class="profile-role">Project Manager</h6>
 				</div>		
 				<div id="tyler" class="profile-container">
 					<img class="profile-picture" src="content/tyler.jpg"/>	
-					<h4>Tyler Vu</h4>
-					<h6>Software Engineer
+					<h4 class="profile-name">Tyler Vu</h4>
+					<h6 class="profile-role">Software Engineer</h6>
 				</div>
-				<div id="rhian" class="profile-container">
-					<img class="profile-picture" src="content/rhian.jpg"/>
-					<h4>Rhian Advincula</h4>
-					<h6>Writer/Graphic Designer
-				</div>
-			</div>	
-			<div style="text-align: center">
 				<div id="phuc" class="profile-container">
 					<img class="profile-picture" src="content/rhian.jpg"/>
-					<h4>Phuc Nguyen</h4>
-					<h6>Writer/Business Analyst</h6>
+					<h4 class="profile-name">Phuc Nguyen</h4>
+					<h6 class="profile-role">Researcher</h6>
 				</div>	
+			</div>	
+			<div style="text-align: center" class="row justify-content-center">
+				<div id="rhian" class="profile-container">
+					<img class="profile-picture" src="content/rhian.jpg"/>
+					<h4 class="profile-name">Rhian Advincula</h4>
+					<h6 class="profile-role">Designer</h6>
+				</div>
 				<div id="jason" class="profile-container">
 					<img class="profile-picture" src="content/rhian.jpg"/>
-					<h4>Jason Dong</h4>
-					<h6>Full Stack Developer</h6>
+					<h4 class="profile-name">Jason Dong</h4>
+					<h6 class="profile-role">Designer</h6>
 				</div>
 				<div id="jenny" class="profile-container">
 					<img class="profile-picture" src="content/rhian.jpg"/>
-					<h4>Jenny Nguyen</h4>
-					<h6>Full Stack Developer</h6>
+					<h4 class="profile-name">Jenny Nguyen</h4>
+					<h6 class="profile-role">Designer</h6>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div id="contact-row">
 		<div id="contact-heading-container">
-			<h2 id="contact-heading">Stay up to date on the project!</h2>
+			<h2 id="contact-heading" class="scaling-heading">Stay up to date on the project!</h2>
 		</div>
 		<div id="icons-container">
-			<i class="fab fa-facebook-square icon"></i>
-			<i class="fab fa-twitter-square icon"></i>
-			<i class="fab fa-instagram icon"></i>
+			<i id="facebook" class="fab fa-facebook-square icon"></i>
+			<i id="twitter" class="fab fa-twitter-square icon"></i>
+			<i id="instagram" class="fab fa-instagram icon"></i>
 		</div>
 	</div>
   </body>
