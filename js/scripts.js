@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	if (isScrolledIntoView("#landing-page-heading")){
+    	$("#landing-page-heading").removeClass("no-opacity");
+    	$("#landing-page-heading").addClass('animated fadeInDown');
+
+    	$("#demo-button").removeClass("no-opacity");
+    	$("#demo-button").addClass('animated bounceInUp');
+    } 
+
 	/*Smooth Scrolling*/
 
 	// Add smooth scrolling to all links
@@ -63,6 +71,25 @@ $(document).ready(function() {
 
 	    	$("#instagram").removeClass("no-opacity");
 	    	$("#instagram").addClass('animated tada');
+	    } 
+
+	   	if (isScrolledIntoView("#diana")){
+	    	$("#diana h4").addClass('animated tada');
+	    } 
+	  	if (isScrolledIntoView("#tyler")){
+	    	$("#tyler h4").addClass('animated tada');
+	    } 
+	    if (isScrolledIntoView("#phuc")){
+	    	$("#phuc h4").addClass('animated tada');
+	    } 
+	    if (isScrolledIntoView("#rhian")){
+	    	$("#rhian h4").addClass('animated tada');
+	    } 
+	    if (isScrolledIntoView("#jason")){
+	    	$("#jason h4").addClass('animated tada');
+	    } 
+	    if (isScrolledIntoView("#jenny")){
+	    	$("#jenny h4").addClass('animated tada');
 	    } 
 
 	});
