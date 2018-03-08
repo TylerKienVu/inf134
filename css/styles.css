@@ -33,6 +33,7 @@ nav {
 	border-color:transparent;
 	background-image:none;
 	box-shadow:none;	
+	opacity: 0.9;
 }
 
 .nav-item {
@@ -336,6 +337,8 @@ nav {
 	padding-bottom: 10vh;
 }
 
-@media screen and (min-width: 576px) {
-
+@media screen and (max-width: 576px) {
+	.navbar {
+		background-color:#D25841 !important;
+	}
 }
