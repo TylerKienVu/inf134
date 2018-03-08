@@ -1,12 +1,11 @@
 $(document).ready(function() {
 
-	if (isScrolledIntoView("#landing-page-heading")){
-    	$("#landing-page-heading").removeClass("no-opacity");
-    	$("#landing-page-heading").addClass('animated fadeInDown');
-
-    	$("#demo-button").removeClass("no-opacity");
-    	$("#demo-button").addClass('animated bounceInUp');
-    } 
+	 $("#demo-button, #share-button, #donate-button").on(
+	    "webkitAnimationEnd oanimationend msAnimationEnd animationend",
+	    function() {
+	        $(this).removeClass("animated");
+	    }
+	);
 
 	/*Smooth Scrolling*/
 
@@ -41,13 +40,13 @@ $(document).ready(function() {
 	        $("nav").removeClass("bg-custom");
 	    }	 
 
-	   	if (isScrolledIntoView("#landing-page-heading")){
-	    	$("#landing-page-heading").removeClass("no-opacity");
-	    	$("#landing-page-heading").addClass('animated fadeInDown');
+	   	// if (isScrolledIntoView("#landing-page-heading")){
+	    // 	$("#landing-page-heading").removeClass("no-opacity");
+	    // 	$("#landing-page-heading").addClass('animated fadeInDown');
 
-	    	$("#demo-button").removeClass("no-opacity");
-	    	$("#demo-button").addClass('animated bounceInUp');
-	    }   
+	    // 	$("#demo-button").removeClass("no-opacity");
+	    // 	$("#demo-button").addClass('animated bounceInUp');
+	    // }   
 
 	    if (isScrolledIntoView("#mission-statement")){
 	    	$("#mission-statement").removeClass("no-opacity");
@@ -55,11 +54,13 @@ $(document).ready(function() {
 	    } 
 
 	   	if (isScrolledIntoView("#share-button")){
-	    	$("#share-button").removeClass("no-opacity");
-	    	$("#share-button").addClass('animated bounceInLeft');
+	   		if($('#share-button').hasClass("no-opacity")){
+		    	$("#share-button").removeClass("no-opacity");
+		    	$("#share-button").addClass('animated bounceInLeft');
 
-	    	$("#donate-button").removeClass("no-opacity");
-	    	$("#donate-button").addClass('animated bounceInRight');	    	
+		    	$("#donate-button").removeClass("no-opacity");
+		    	$("#donate-button").addClass('animated bounceInRight');	    
+	    	}	
 	    } 
 
 	   	if (isScrolledIntoView("#facebook")){
@@ -93,6 +94,10 @@ $(document).ready(function() {
 	    } 
 
 	});
+
+	// $("#demo-button").hover(function(){
+	// 	$(this).removeClass('animated bounceInUp');
+	// }, function() {	});
 
 	/*-------------------------------*/
 

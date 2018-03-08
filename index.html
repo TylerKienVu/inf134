@@ -15,6 +15,7 @@
 	<script src="js/scripts.js"></script>	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/animate.css">    
+	<link rel="stylesheet" href="css/hover.css">    	
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="content/favicon.png">
   </head>
@@ -27,26 +28,32 @@
 	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
 	    <ul class="navbar-nav ml-auto">
 	      <li class="nav-item active">
-	        <a class="nav-link" href="#landing-page-row">Home<span class="sr-only">(current)</span></a>
+	        <a class="nav-link hvr-pulse" href="#landing-page-row">Home<span class="sr-only">(current)</span></a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#demo-row">Demo</a>
+	        <a class="nav-link hvr-pulse" href="#mission-statement-row">Our Mission</a>
+	      </li>	      
+	      <li class="nav-item">
+	        <a class="nav-link hvr-pulse" href="#demo-row">Demo</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#support-row">Support Us</a>
+	        <a class="nav-link hvr-pulse" href="#support-row">Support Us</a>
 	      </li>	      	      
 	      <li class="nav-item">
-	        <a class="nav-link" href="#team-row">Our Team</a>
-	      </li>	      
+	        <a class="nav-link hvr-pulse" href="#team-row">Our Team</a>
+	      </li>	   
+	      <li class="nav-item">
+	        <a class="nav-link hvr-pulse" href="#contact-row">Follow Us</a>
+	      </li>   
 	    </ul>
 	  </div>
 	</nav>
 	<div id="landing-page-row">
 		<div id="landing-page-heading-container" class="centered-axis-x">
-			<h2 id="landing-page-heading" class="no-opacity">TherapyVR</h2>
+			<h2 id="landing-page-heading" class="animated fadeInDown">TherapyVR</h2>
 		</div>
 		<div id="demo-button-container" class="centered-axis-x">
-			<button id="demo-button" type="button" class="btn btn-outline-primary no-opacity"><a href="#demo-row">Demo</a></button>
+			<button id="demo-button" type="button" class="btn btn-outline-primary animated fadeInUp hvr-grow"><a href="#demo-row">Demo</a></button>
 		</div>
 		<img id="landing-img" src="content/background.jpg">
 	</div>
@@ -79,10 +86,10 @@
 		</div>
 		<div id="support-buttons">
 			<div class="button-container">
-				<button id="share-button" type="button" class="btn btn-primary no-opacity">Share</button>
+				<button id="share-button" type="button" class="btn btn-primary no-opacity hvr-grow">Share</button>
 			</div>
 			<div class="button-container">
-				<button id="donate-button" type="button" class="btn btn-primary no-opacity">Donate</button>
+				<button id="donate-button" type="button" class="btn btn-primary no-opacity hvr-grow">Donate</button>
 			</div>
 		</div>
 	</div>
@@ -132,9 +139,9 @@
 			<h2 id="contact-heading" class="scaling-heading">Stay up to date on the project!</h2>
 		</div>
 		<div id="icons-container">
-			<i id="facebook" class="fab fa-facebook-square icon"></i>
-			<i id="twitter" class="fab fa-twitter-square icon"></i>
-			<i id="instagram" class="fab fa-instagram icon"></i>
+			<a class="social-media-symbols hvr-grow-rotate" href="#"><i id="facebook" class="fab fa-facebook-square icon"></i></a>
+			<a class="social-media-symbols hvr-grow-rotate" href="#"><i id="twitter" class="fab fa-twitter-square icon"></i></a>
+			<a class="social-media-symbols hvr-grow-rotate" href="#"><i id="instagram" class="fab fa-instagram icon"></i></a>
 		</div>
 	</div>
   </body>
